@@ -1,8 +1,8 @@
 name: CloudFormation Deployment
 
-on:si
-  push:si
-    paths:si
+on:
+  push:
+    paths:
       - "cf-resources-template.yaml"
 
   workflow_dispatch:  # ejecutarlo manualmente si es necesario
@@ -26,6 +26,7 @@ jobs:
         run: |
           aws cloudformation deploy \
             --template-file cf-resources-template.yaml \
-            --stack-name workshop-3-studen valeria botero
+            --stack-name workshop-3-studen valeria botero botero
             --capabilities CAPABILITY_NAMED_IAM
+            
  
